@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container {
+    border: 10px dotted;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: 100px 100px;
+    gap: 15px;
+}
+
+.grid-item {
+    padding: 25% 30px;
+}
+
+.container {
+    color: burlywood
+    display: flex;
+    flex-wrap: wrap
+}
+
+main {
+    background: orange;
+}
+
+img {
+    width: 25%;
+    float: right;
+}
