@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/Styles.css" rel="stylesheet">
+</head>
+
+<body onload="startTime()">
+
+    <div id="txt"></div>
+
+    <h1>Rank Today's Vibe</h1>
+    <p>1 = amazing, 5 = terrible</p>
+
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10){i = "0" + i};
+            return i;
+        }
+
+        function showMessage1() {
+                alert("If you're having a good day, its because you deserve it! You're beautiful and I mean that. Go and get yourself a cute little drink.");
+            }
+
+        function showMessage2() {
+                alert("Not every day is perfect, and that's okay! Maybe tomorrow will be better. Who knows, maybe even later today will be better!");
+            }
+
+        function showMessage3() {
+                alert("Maybe today is mediocre because.... it's just like you! jk jk/srs");
+            }
+        function showMessage4() {
+                alert("Hopefully it's nothing a hug can't fix.");
+            }
+        function showMessage5() {
+                alert("Take a nap! Better luck tomorrow.");
+            }
+    </script>
+
+    <div class = "container"> 
+        <button type="button" id="btn btn1" value="Good Day!" onClick="showMessage1()" class= "btn btn1">1</button>
+        <button type="button" id="btn btn2" value="Okay Day!" onClick="showMessage2()" class= "btn btn2">2</button>
+        <button type="button" id="btn btn3" value="Day!" onClick="showMessage3()" class= "btn btn3">3</button>
+        <button type="button" id="btn btn4" value="Rough Day!" onClick="showMessage4()" class= "btn btn4">4</button>
+        <button type="button" id="btn btn5" value="Terrible Day!" onClick="showMessage5()" class= "btn btn5">5</button>
+    </div>
+
+
+</body>
+</html>
+
+
