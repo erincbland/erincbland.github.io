@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="your name">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio of Web Work</title>
+        <style>
+            marquee{
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    background-color: #20368f;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #829CD0;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #000B4F;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: #58184f81;
+  }
+  .container .overlay .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .one {
+    background-color: #20368f;
+    width: auto;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: #581845;
+  }
+  .two {
+    background-color: #20368f;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    box-shadow: #581845;
+  }
+  .three {
+    background-color: #20368f;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    box-shadow: #581845;
+  }
+  .four {
+    background-color: #20368f;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    box-shadow: #581845;
+  }
+  .five {
+    background-color: #20368f;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    box-shadow: #581845;
+  }
+  .six {
+    background-color: #20368f;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    box-shadow: #581845;
+  }
+  img {
+    height: 150px;
+    width: 150px;
+    align-content: center;
+  }
+  
+  body {
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    background-color: #829CD0;
+    cursor: crosshair;
+    color: white;
+    padding: 10px;
+  }
+  h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #829CD0;
+    padding: 10px;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media only screen and (min-width: 600px) {
+  }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul id="nav-links">
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="page_title">Project Portfolio</h1>
+        <main id="projects-grid">
+            <article id="project1" class="project_item">
+                <h2 class="project_number"><a href="https://erincbland.github.io/ErinBlandingJournalEntries/ErinBlandingJournalEntries.html">Journal Entries</a></h2>
+                <img class="project_image" src="Images/1.jpg" alt="project 1 image" width="" height=""/>
+                <h3 class="project_title">My First Webpage using HTML</h3>
+                <p class="project_description">In this first project, I created a valid HTML5 webpage and formated text and images. </p>
+            </article>
+            <article id="project2" class="project_item">
+                <h2 class="project_number"><a href="https://erincbland.github.io/ErinBlandingNowThat'sWhatICallMusic2022/Index.html">Now That's What I Call Music</a></h2>
+                <img class="project_image" src="Images/2.jpg" alt="project 2 image" />
+                <h3 class="project_title">Early Internet Art: Accessible Surfing</h3>
+                <p class="project_description">In this second project, I created a website inspired by Early Internet Art. </p>
+            </article>
+            <article id="project3" class="project_item">
+                <h2 class="project_number"><a href="https://erincbland.github.io/GridandFlexbox/index.html">Grid and Flexbox</a></h2>
+                <img class="project_image" src="Images/3.jpg" alt="project 3 image" />
+                <h3 class="project_title">Laying out Layouts</h3>
+                <p class="project_description">In this third project, I built a responsive, educational website that reminded future me how to build a responsive website.</p>
+            </article>
+            <article id="project4" class="project_item">
+                <h2 class="project_number"><a href="https://erincbland.github.io/SmileyButtonProject/index.html">Button Mood Project</a></h2>
+                <img class="project_image" src="Images/4.jpg" alt="project 4 image" />
+                <h3 class="project_title">JavaScript: Simple Task</h3>
+                <p class="project_description">In this fourth project, I used JavaScript to make a mood ranking tool that gives users a message based on their input.</p>
+            </article>
+            <article id="project5" class="project_item">
+                <h2 class="project_number"><a href="https://erincbland.github.io/Branding/index.html">Personal Website</a></h2>
+                <img class="project_image" src="Images/5.jpg" alt="project 5 image" />
+                <h3 class="project_title">Personal Website: To Brand or Not to Brand?</h3>
+                <p class="project_description">In this fifth project, I recreated some of the personal website I had created using Squarespace.</p>
+            </article>
+            <article id="project6" class="project_item">
+                <h2 class="project_number"><a href="https://erincbland.github.io/Cheerio/index.html">Cheerio</a></h2>
+                <img class="project_image" src="Images/6.jpg" alt="project 6 image" />
+                <h3 class="project_title">Final Project: Re-Imagining the Internet</h3>
+                <p class="project_description">In the final project, I Incorporated all the skills I've learned in class to design a music social media website. </p>
+        </main>
+
+        <footer>
+            <ul id="footer-items">
+                <li>&copy; 2022</li>
+                <li><a href="https://www.erinblanding.com">Personal Website</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
